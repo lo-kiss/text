@@ -28,11 +28,6 @@ function generateFile() {
   downloadButton.download = "text.txt";
 }
 
-saveButton.addEventListener("click", () => {
-  saveText();
-});
-
-downloadButton.addEventListener("click", () => {
-  generateFile();
-});
+saveButton.addEventListener("click", saveText);
+downloadButton.addEventListener("click", generateFile);
 
